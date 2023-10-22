@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchSongs, createSong, updateSong, deleteSong } from './actions';
-import './App.css';
-
+import { fetchSongs, createSong, updateSong, deleteSong } from '../actions';
 const App = () => {
   const dispatch = useDispatch();
   const songs = useSelector((state) => state.songs);
